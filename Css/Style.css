@@ -1,0 +1,221 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+header {
+  background-color: #cf78b5;
+  display: flex;
+  height: 200px; }
+
+div img {
+  display: flex; }
+
+img {
+  width: 100%;
+  height: 100%; }
+
+.el_salon {
+  width: 100%;
+  height: 100%; }
+
+nav {
+  background-color: #9e538b;
+  position: sticky;
+  top: 0px; }
+
+a {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration: none; }
+
+ul {
+  display: flex;
+  justify-content: space-evenly;
+  height: 70px;
+  align-items: center;
+  list-style-type: none; }
+
+li a {
+  color: white;
+  font-size: 20px; }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #cf40ac; }
+
+#texto_home {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center; }
+
+span {
+  color: aliceblue;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 22px; }
+
+span:hover {
+  color: #99c4e9;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 22,1px;
+  transition: 2s; }
+
+p {
+  color: white;
+  font-size: 90xp; }
+
+h1 {
+  color: aliceblue;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: calc( 50px + 3vw);
+  padding-top: 50px; }
+
+h2 {
+  color: white;
+  text-align: center;
+  font-size: calc( 45px + 2vw);
+  padding-top: 50px; }
+
+button {
+  background-color: black;
+  color: white;
+  font-size: 20xp; }
+
+#grilla {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: grid;
+  width: 100%;
+  grid-template-rows: 35px 35px 35px 35px 35px 35px 35px;
+  grid-template-columns: 25% 25% 25%;
+  background-color: #c89bdf;
+  grid-template-areas: "a1 a2 a3" "a4 a5 a6" "a7 a8 a9" "a10 a11 a12" "a13 a14 a15" "a16 a17 a18" "a19 a20 a21";
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  column-gap: 40px;
+  row-gap: 10px; }
+
+.A_1, .A_2 {
+  font-size: xx-large;
+  color: aliceblue; }
+
+.A_2 {
+  font-size: x-large; }
+
+.el-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0px;
+  font-size: 22x;
+  background-color: #df36c2;
+  animation-name: colores;
+  animation-duration: 8s;
+  animation-iteration-count: infinite; }
+
+@keyframes colores {
+  0% {
+    background-color: #df36c2; }
+  25% {
+    background-color: #c721ab; }
+  50% {
+    background-color: #9c1385; }
+  75% {
+    background-color: #80036b; }
+  100% {
+    background-color: #520144; } }
+
+body {
+  background-color: #cf78b5; }
+
+#ubicacion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70%; }
+
+#formulario {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+label {
+  font-size: 20px;
+  color: white; }
+
+#Nombre_usuario {
+  position: relative;
+  left: 33px; }
+
+#Apellido_usuario {
+  position: relative;
+  left: 32px; }
+
+#Mail_Usuario {
+  position: relative;
+  left: 67px; }
+
+#Tel_Usuario {
+  position: relative;
+  left: 30px; }
+
+div img {
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+@media screen and (max-width: 600px) {
+  #grilla {
+    background-color: aliceblue;
+    column-gap: 40px;
+    row-gap: 10px; }
+  .A_1, .A_2 {
+    font-size: large;
+    color: blueviolet; }
+  .A_2 {
+    color: blueviolet;
+    font-size: medium; }
+  h2 {
+    color: white;
+    font-size: 40px;
+    padding-top: 50px; } }
+
+@media screen and (min-width: 600px) {
+  #grilla {
+    background-color: blueviolet;
+    column-gap: 40px;
+    row-gap: 10px; }
+  .A_1, .A_2 {
+    font-size: x-large;
+    color: aliceblue; }
+  .A_2 {
+    color: aliceblue;
+    font-size: large; }
+  h2 {
+    color: white;
+    font-size: 40px;
+    padding-top: 50px; } }
+
+@media screen and (min-width: 992px) {
+  #grilla {
+    background-color: #dad3df;
+    column-gap: 40px;
+    row-gap: 10px; }
+  .A_1, .A_2 {
+    font-size: xx-large;
+    color: blueviolet; }
+  .A_2 {
+    color: blueviolet;
+    font-size: x-large; }
+  h2 {
+    color: white;
+    font-size: 40px;
+    padding-top: 50px; } }
